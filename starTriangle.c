@@ -8,15 +8,25 @@ Right-angled Triangle
 * * * * *
 
 */
+
+
 #include <stdio.h>
-void main (){
-    int num;
-    printf ("Enter number of rows triangle will cover : ");
-    scanf ("%d",&num);
-    for (int i=0;i<num;i++) {
-        for (int j = 0;j<=i;j++) {
-            printf ("*");
+
+int main()
+{
+    int i, j, rows;
+
+    printf("Enter number of rows: ");
+    scanf("%d", &rows);
+
+    for(i=1; i<=rows; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            printf("* ");
         }
-        printf ("\n");
+        printf("\n");
     }
+
+    return 0;
 }
