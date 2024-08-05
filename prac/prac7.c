@@ -1,0 +1,1 @@
+//Implement the string operations of strcat, strcmp, strcpy functions using pointer.
