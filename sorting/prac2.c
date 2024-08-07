@@ -18,12 +18,11 @@ void main()
     }
     printf("\n");
 
-    insertionSort(arr,size);
+    insertionSort(arr, size);
 }
 
 void insertionSort(int arr[], int size)
 {
-    int temp;
     int curr, prev;
 
     for (int i = 1; i < size; i++)
