@@ -1,6 +1,5 @@
 // stack push pop
 #include <stdio.h>
-#include <conio.h>
 #include <stdlib.h>
 #define MAX 5
 
@@ -14,13 +13,12 @@ void display();
 void main()
 {
     int ch, num;
-    clrscr();
     while (1)
     {
         printf("\n1. Push\n");
         printf("\n2. Pop\n");
         printf("\n3. Display\n");
-        printf("\n3. Quit\n");
+        printf("\n4. Quit\n");
         printf("Enter your choice : ");
         scanf("%d", &ch);
 
@@ -57,7 +55,6 @@ void main()
 // func for push
 void push(int x)
 {
-    clrscr();
     if (top == MAX - 1)
     {
         printf("\nOverflow\n");
@@ -72,10 +69,9 @@ void push(int x)
 void pop()
 {
     int r;
-    clrscr();
     if (top == -1)
     {
-        printf("\nOverflow\n");
+        printf("\nUnderflow\n");
     }
 
     r = arr[top];
@@ -86,10 +82,9 @@ void pop()
 // func for display
 void display()
 {
-    clrscr();
     if (top == -1)
     {
-        printf("\nOverflow\n");
+        printf("\nUnderflow\n");
     }
 
     for (int i = top; i >= 0; i--)
