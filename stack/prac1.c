@@ -15,9 +15,9 @@ void main()
     int ch, num;
     while (1)
     {
-        printf("\n1. Push\n");
-        printf("\n2. Pop\n");
-        printf("\n3. Display\n");
+        printf("1. Push");
+        printf("\n2. Pop");
+        printf("\n3. Display");
         printf("\n4. Quit\n");
         printf("Enter your choice : ");
         scanf("%d", &ch);
@@ -91,4 +91,5 @@ void display()
     {
         printf("%d\t", arr[i]);
     }
+    printf("\n");
 }
